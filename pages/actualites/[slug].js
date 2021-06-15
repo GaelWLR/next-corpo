@@ -1,8 +1,13 @@
 import { client } from '../../services/contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Image from 'next/image';
+import Skeleton from '../../components/Skeleton';
 
 export default function Article({ article }) {
+  if (!article) {
+    return Skeleton;
+  }
+
   const { featuredImage, title, content } = article.fields;
 
   return (
@@ -39,7 +44,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
