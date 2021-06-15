@@ -4,7 +4,7 @@ export default function Layout({ children }) {
   return (
     <div className='flex flex-col min-h-screen'>
       <header className='flex flex-row'>
-        <HeaderNavLink href='/' title='Optimhome' />
+        <HeaderNavLink href='/' title='OH' />
         <HeaderNavLink href='/actualites' title='Actualités' />
         <div className='flex-grow' />
         <HeaderNavLink href='/estimer' title='Estimer mon bien' className='text-white bg-primary' />

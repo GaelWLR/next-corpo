@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function Home() {
   return (
     <div className='relative flex flex-row items-center flex-grow w-full h-full bg-cover bg-home justify-evenly'>
