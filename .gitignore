@@ -1,34 +1,44 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
+### Packages ###
+node_modules
+vendor
+bower_components
+.pnp
 .pnp.js
 
-# testing
-/coverage
+### Bundler ###
+.cache
+.next
+.nuxt
+dist
+build
+tmp
 
-# next.js
-/.next/
-/out/
+### Test ###
+coverage
 
-# production
-/build
+### Editor ###
+.idea
+.vscode
 
-# misc
-.DS_Store
-*.pem
+### Env ###
+.env
+.env.test
+.env.*.test
+.env.local
+.env.*.local
 
-# debug
+### Logs ###
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
 
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# vercel
-.vercel
+### OS ###
+.DS_Store
+._*
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
