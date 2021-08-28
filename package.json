@@ -2,9 +2,14 @@
   "name": "with-tailwindcss",
   "version": "0.0.1",
   "private": true,
-  "description": "next-corpo",
+  "description": "Repository used to test quickly Next with Contentful.",
   "author": "Gaël Weiler",
   "license": "MIT",
+  "keywords": [
+    "next",
+    "demo",
+    "contentful"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
